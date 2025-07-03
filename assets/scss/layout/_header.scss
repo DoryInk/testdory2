@@ -1,0 +1,86 @@
+
+// header ------------------------------/
+.head__wrap,
+.btn__wrap{
+	display: flex;
+    height: 834px;
+    @media screen and (max-width: 768px){
+      height: auto;
+      flex-direction: column
+    }
+
+    .l--image-box{
+        flex: 1 1 45%;
+        min-width: 300px;
+        
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 834px;
+			@media screen and (max-width: 768px){
+				height: auto;
+			}
+        }
+    }
+
+    .r--text-box{
+        flex: 1 1 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 80px;
+		font-family: $font-family-noto;
+		@media screen and (max-width: 768px){
+			margin: 24px 0;
+			margin-left: 24px;
+		}
+
+        h1 {
+            font-size: 120px;
+            height: 180px;
+            line-height: 180px;
+            margin-bottom: 12px;
+			font-weight: 900;
+			@media screen and (max-width: 768px){
+				font-size: 52px;
+				height: auto; //78px;
+				line-height: 2; //150%;
+				margin-bottom: 0px;
+			}
+        }
+
+		h2.title{
+			font-size: $fz3; //24px
+			@media screen and (max-width: 768px){
+				font-size: 28px;
+			}
+		}
+    }
+}
+
+
+.btn__wrap{
+	display: flex;
+	height: 640px;
+	@media screen and (max-width: 768px){
+		height: auto;
+		flex-direction: column;
+	}
+
+	.l--image-box{
+      img{
+            height: 640px;
+			@media screen and (max-width: 768px){
+				height: auto;
+			}
+        }
+    }
+
+	.r--text-box{
+        margin-left: 24px;
+		@media screen and (max-width: 768px){
+			margin-left: 0px;
+		}
+	}
+}
